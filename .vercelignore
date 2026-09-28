@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.idea/
+.review-tools/
+.env*
+*.pdf
+*.m4a
+stitch_pulse_emi_dashboard/
+docs/
+recomendacion.txt

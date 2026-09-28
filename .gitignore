@@ -8,3 +8,4 @@ dist/
 !.env.example
 /BORRADOR CORR - VANESSA MAQUERA.pdf
 /reunion-1.m4a
+.vercel/
