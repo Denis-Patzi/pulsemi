@@ -44,13 +44,13 @@ function Platform({onDemo}){
  return <div className="platform-shell"><App onDemo={onDemo} theme={theme} toggleTheme={toggleTheme}/></div>;
 }
 function Root(){
- const [demo,setDemo]=useState(()=>new URLSearchParams(window.location.search).get('vista')!=='plataforma');
+ const [demo,setDemo]=useState(()=>new URLSearchParams(window.location.search).get('vista')==='simulacion');
  useEffect(()=>{
-  function syncView(){setDemo(new URLSearchParams(window.location.search).get('vista')!=='plataforma');}
+  function syncView(){setDemo(new URLSearchParams(window.location.search).get('vista')==='simulacion');}
   window.addEventListener('popstate',syncView);
   return()=>window.removeEventListener('popstate',syncView);
  },[]);
- function switchView(showDemo){const url=new URL(window.location.href);if(showDemo)url.searchParams.delete('vista');else url.searchParams.set('vista','plataforma');window.history.pushState({},'',url);setDemo(showDemo);window.scrollTo(0,0);}
+ function switchView(showDemo){const url=new URL(window.location.href);if(showDemo)url.searchParams.set('vista','simulacion');else url.searchParams.delete('vista');window.history.pushState({},'',url);setDemo(showDemo);window.scrollTo(0,0);}
  return demo?<Simulation onExplore={()=>switchView(false)}/>:<Platform onDemo={()=>switchView(true)}/>;
 }
 createRoot(document.getElementById('root')).render(<Root/>);

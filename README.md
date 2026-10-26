@@ -2,7 +2,7 @@
 
 ## Demostración automática para exposición
 
-La pantalla inicial presenta el nuevo espacio visual inspirado en `idea1.png` e `idea-2.png`: superficies claras, tarjetas translúcidas, tonos suaves y estadísticas animadas. En escritorio se pueden mostrar dos o tres paneles conectados; en móvil se disponen uno debajo del otro.
+La pantalla inicial (`/`) muestra el acceso al sistema. El icono **Abrir simulación** del login abre `/?vista=simulacion`. La demostración presenta el nuevo espacio visual inspirado en `idea1.png` e `idea-2.png`: superficies claras, tarjetas translúcidas, tonos suaves y estadísticas animadas. En escritorio se pueden mostrar dos o tres paneles conectados; en móvil se disponen uno debajo del otro.
 
 El botón superior del menú permite **contraerlo a una columna de iconos** o expandirlo. La preferencia se conserva en `localStorage` bajo `pulse-sidebar-collapsed`; los iconos incluyen etiquetas accesibles y nombres al pasar el cursor. **Ver tres paneles** muestra simultáneamente Personal administrativo, Recursos Humanos y Superior inmediato. El icono **Opciones de presentación** de la barra flotante reúne los botones **Dos paneles / Tres paneles**, el tipo de superior inmediato y el selector para ir a cualquiera de las siete escenas. También funciona en móvil, se cierra con Escape o clic fuera y permite conservar la presentación despejada. Reiniciar la simulación conserva la distribución seleccionada.
 
@@ -31,7 +31,7 @@ Por defecto, la simulación comienza con 33 cuestionarios ficticios completos y 
 
 Este recorrido es local, reproducible y no escribe respuestas ni acciones en `localStorage`, no envía correos y no requiere servicios externos. Reiniciar o retroceder reconstruye el estado sin duplicar registros. No representa una medición real del clima o del desempeño.
 
-**Explorar plataforma** abre los perfiles manuales del prototipo anterior, conservando sus datos locales. También se puede acceder mediante `/?vista=plataforma`. **Abrir simulación** regresa al modo exposición. El historial del navegador permite regresar entre ambas vistas.
+**Explorar plataforma** vuelve al inicio (`/`) del sistema manual, conservando sus datos locales. Si hay una sesión guardada, se recupera el perfil conectado. También se puede acceder mediante `/?vista=plataforma`. **Abrir simulación** regresa al modo exposición. El historial del navegador permite regresar entre ambas vistas.
 
 Archivos de la demostración:
 
