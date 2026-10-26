@@ -1,0 +1,45 @@
+/* Readable presentation sizes, including the simultaneous three-panel view. */
+.sim-app{font-size:19px}
+.sim-app :is(.sim-question p,.sim-personal-tip p,.sim-person-hero p){font-size:18px;line-height:1.75}
+.sim-app :is(.sim-story p,.sim-intro p,.sim-management-title p,.sim-strength p,.sim-management-tip p,.sim-actions article p){font-size:16px;line-height:1.7}
+.sim-app :is(.sim-personal-tip strong,.sim-profile strong,.sim-actions h4){font-size:17px;line-height:1.6}
+.sim-app :is(.sim-section-label,.sim-table-heading h3,.sim-management-tip h3,.sim-personal-scores>div,.sim-personal-scores strong){font-size:16px}
+.sim-app :is(.sim-eyebrow,.sim-profile small,.sim-question-heading small,.sim-private,.sim-unit-label,.sim-scenario-label,.sim-question-foot,.sim-scale-labels,.sim-table-heading>span,.sim-section-label>span:last-child,.sim-update,.sim-update small,.sim-actions article>div,.sim-action-unit,.sim-action-status,.sim-bottom-story span,.sim-bottom-story strong){font-size:13px;line-height:1.6}
+.sim-app :is(.sim-metric>div:first-child,.sim-metric strong small,.sim-dimension-tile>div:first-child,.sim-dimension-tile strong small){font-size:14px;line-height:1.5}
+.sim-app .sim-metric>span{font-size:13px;line-height:1.6;display:block}
+.sim-app .sim-metric>strong{font-size:40px}
+.sim-app .sim-dimension-tile>strong{font-size:29px}
+.sim-app .sim-dimension-tile>div:first-child{min-height:42px}
+.sim-app .sim-table{table-layout:fixed;white-space:normal}
+.sim-app .sim-table th{font-size:13px;overflow-wrap:anywhere;line-height:1.5}
+.sim-app .sim-table th:first-child{width:48%}
+.sim-app .sim-table td{font-size:16px;overflow-wrap:anywhere;line-height:1.6}
+.sim-app .sim-table-score{font-size:14px;padding:4px}
+.sim-app .sim-fineprint{font-size:12px!important;line-height:1.7!important}
+.sim-app .sim-question-heading h3{font-size:23px}
+.sim-app .sim-question-heading p{font-size:16px}
+.sim-app .sim-likert>span{height:34px;font-size:16px}
+.sim-app .sim-segmented{flex-wrap:wrap}
+.sim-app .sim-segmented button{font-size:13px!important;padding:7px 10px}
+.sim-app :is(.sim-layout-options button,.sim-theme-toggle,.sim-explore,.sim-play){font-size:14px!important}
+.sim-app .sim-layout-options>span{font-size:13px}
+.sim-app .sim-scene-nav button{font-size:12px!important;padding:9px 10px}
+.sim-app .sim-scene-nav button>span{font-size:11px;min-width:18px;min-height:18px}
+.sim-app :is(.sim-time,.sim-speed select){font-size:14px}
+.sim-app .sim-timeline>div{font-size:11px}
+.sim-app .sim-speed{font-size:12px}
+.sim-app .sim-play{min-width:164px}
+.sim-app .sim-play-controls{gap:7px}
+.sim-app .sim-nav-item{white-space:normal;line-height:1.5}
+.sim-app.menu-expanded .sim-nav-item{font-size:14px!important}
+.sim-app .sim-nav-text{min-width:0}
+.sim-app .sim-sidebar-note p{font-size:16px}
+.sim-app .sim-sidebar-note>span,.sim-app .sim-sidebar-foot{font-size:12px}
+.sim-app .sim-story strong{font-size:17px}
+.sim-app .sim-personal-scores>div{grid-template-columns:1.4fr 1fr 36px}
+.sim-app .sim-participation-bars small{font-size:11px}
+.sim-app .sim-participation-bars{height:62px}
+.sim-app .sim-management-toolbar{flex-wrap:wrap}
+.sim-app .sim-management-toolbar>span:last-child{font-size:12px}
+@media(max-width:1200px){.sim-app .sim-player{flex-wrap:wrap}.sim-app .sim-speed{font-size:0}.sim-app .sim-main{padding-bottom:175px}.sim-app .focus-three .sim-metrics{grid-template-columns:1fr}.sim-app .focus-three .sim-metric>strong{font-size:34px}.sim-app .focus-three .sim-personal-scores>div{grid-template-columns:1fr 34px}.sim-app .focus-three .sim-personal-scores>div>div{display:none}.sim-app .sim-table td{font-size:14px}}
+@media(max-width:720px){.sim-app .sim-main{padding-bottom:220px}.sim-app .sim-play{min-width:144px;padding:12px}.sim-app .sim-play-controls{gap:3px}.sim-app .sim-time{font-size:13px}.sim-app .sim-speed select{font-size:13px}.sim-app .sim-topbar{padding:0 12px}.sim-app .sim-topbar>span{font-size:12px;gap:5px}.sim-app .sim-topbar>div{gap:5px}.sim-app .sim-profile small{font-size:11px}.sim-app .sim-private{font-size:11px}.sim-app .sim-person-hero{gap:8px}.sim-app .sim-person-hero p{font-size:17px}.sim-app .sim-seal-art{width:65px;height:65px}.sim-app .sim-seal-art>div{width:55px;height:55px}.sim-app .sim-seal-art>img{width:45px;height:45px}.sim-app .focus-three .sim-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.sim-app .sim-metric>strong{font-size:34px}.sim-app .sim-metric strong small{font-size:11px;margin-left:3px}.sim-app .sim-table td{font-size:14px}.sim-app .sim-personal-scores>div{grid-template-columns:1.4fr 1fr 34px}}

@@ -1,0 +1,54 @@
+:root{
+  --ui-canvas:#f3f5fa;
+  --ui-atmosphere:radial-gradient(ellipse at 95% 2%,#dce6f7 0,transparent 42%),radial-gradient(ellipse at 26% 85%,#e9edf6 0,transparent 45%),#f3f5fa;
+  --ui-ink:#25364f;
+  --ui-muted:#687b9c;
+  --ui-surface:#ffffffc7;
+  --ui-heading:#f5f7fced;
+  --ui-sidebar:#ffffffb8;
+  --ui-border:#dce3ef;
+  --ui-soft:#e8edf6;
+  --ui-selected:#dce7f8;
+  --ui-accent:#00549f;
+  --ui-primary:#264b80;
+  --ui-primary-ink:#ffffff;
+  --ui-gold:#d5a91f;
+  --ui-shadow:0 9px 30px #243e6608,inset 0 1px 0 #ffffff80;
+  --ui-radius:24px;
+  --ui-body:18px;
+  --ui-copy:16px;
+  --ui-small:13px;
+  --ui-type-title:clamp(29px,2.5vw,38px);
+  --ui-type-section:25px;
+  --ui-type-label:18px;
+  --ui-type-value:40px;
+  --ui-type-control:16px;
+  --ui-type-table:16px;
+  --ui-tone-0:linear-gradient(140deg,#f1f6ff,#dfeafb);
+  --ui-tone-1:linear-gradient(140deg,#f7f3ff,#eae1f7);
+  --ui-tone-2:linear-gradient(140deg,#eff9f8,#dcefeb);
+  --ui-tone-3:linear-gradient(140deg,#fff9ec,#f5e8c8);
+  --ui-tone-4:linear-gradient(140deg,#fff2f5,#f4e0e8);
+}
+[data-theme="dark"]{
+  --ui-canvas:#0b1224;
+  --ui-atmosphere:radial-gradient(ellipse at 95% 2%,#18345d 0,transparent 42%),radial-gradient(ellipse at 26% 85%,#172440 0,transparent 45%),#0b1224;
+  --ui-ink:#e7edf9;
+  --ui-muted:#b3c1db;
+  --ui-surface:#1c2230e8;
+  --ui-heading:#202738ed;
+  --ui-sidebar:#171e2de8;
+  --ui-border:#3a465f;
+  --ui-soft:#29354f;
+  --ui-selected:#344765;
+  --ui-accent:#8db5f7;
+  --ui-primary:#ffdd00;
+  --ui-primary-ink:#12213d;
+  --ui-gold:#ffdd00;
+  --ui-shadow:0 9px 30px #0000001a,inset 0 1px 0 #ffffff06;
+  --ui-tone-0:linear-gradient(140deg,#273348,#202c41);
+  --ui-tone-1:linear-gradient(140deg,#383047,#2e293c);
+  --ui-tone-2:linear-gradient(140deg,#253b3d,#203337);
+  --ui-tone-3:linear-gradient(140deg,#403a2b,#342e23);
+  --ui-tone-4:linear-gradient(140deg,#40303b,#352933);
+}

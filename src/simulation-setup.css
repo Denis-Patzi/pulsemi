@@ -1,0 +1,38 @@
+:root .sim-app .sim-population-tools{display:grid;gap:14px;padding:18px 22px;border-bottom:1px solid var(--ui-border)}
+:root .sim-app .sim-population-options{position:relative}
+:root .sim-app .sim-population-options>summary{display:flex;align-items:center;gap:8px;list-style:none;cursor:pointer;font-size:14px;line-height:1.5;color:var(--ui-accent);background:var(--ui-soft);border:1px solid var(--ui-border);padding:10px 12px;border-radius:12px}
+:root .sim-app .sim-population-options>summary::-webkit-details-marker{display:none}
+:root .sim-app .sim-population-options>summary>svg:last-child{margin-left:auto}
+:root .sim-app .sim-population-options[open]>summary{border-color:var(--ui-accent)}
+:root .sim-app .sim-population-options>summary:focus-visible{outline:2px solid var(--ui-accent);outline-offset:4px}
+:root .sim-app .sim-population-popover{position:absolute;z-index:16;left:0;top:calc(100% + 9px);width:320px;max-width:calc(100vw - 65px);max-height:min(440px,65dvh);overflow:auto;padding:18px;background:var(--ui-canvas);border:1px solid var(--ui-border);border-radius:18px;box-shadow:0 15px 45px #0b122440}
+:root .sim-app .sim-setup-form{margin:0 0 18px;padding-bottom:20px;border-bottom:1px solid var(--ui-border)}
+:root .sim-app .sim-population-popover .sim-setup-form{margin:0;padding:0;border:0}
+:root .sim-app .sim-setup-form label{display:block;margin:0 0 14px;font-size:14px;font-weight:400;color:var(--ui-muted);line-height:1.6}
+:root .sim-app .sim-setup-form :is(input,select){display:block;width:100%;max-width:100%;margin:6px 0 0;padding:11px 12px;border-radius:12px;background:var(--ui-surface);border:1px solid var(--ui-border);color:var(--ui-ink);font-size:16px}
+:root .sim-app .sim-setup-form input:invalid:not(:focus){border-color:var(--ui-border)}
+:root .sim-app .sim-setup-form>p{font-size:12px;color:var(--ui-muted);line-height:1.7;margin:0 0 14px}
+:root .sim-app .sim-setup-form>button{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;padding:11px 14px;background:var(--ui-primary);color:var(--ui-primary-ink);border-radius:20px;font-size:14px;line-height:1.5}
+:root .sim-app .sim-population-tools>label{display:block;margin:0;font-size:13px;font-weight:400;color:var(--ui-muted);line-height:1.6}
+:root .sim-app .sim-population-tools>label>select{display:block;width:100%;max-width:100%;font-size:16px;line-height:1.5;background:var(--ui-heading);color:var(--ui-ink);border:1px solid var(--ui-border);border-radius:12px;padding:10px 12px;margin-top:6px}
+:root .sim-app .sim-batch-status{display:grid;gap:8px}
+:root .sim-app .sim-batch-status>span{font-size:13px;line-height:1.6;color:var(--ui-muted)}
+:root .sim-app .sim-population-progress,:root .sim-app .sim-batch-status>progress{display:block;appearance:none;width:100%;height:5px;border:none;border-radius:4px;background:var(--ui-soft);accent-color:var(--ui-accent);overflow:hidden}
+:root .sim-app .sim-population-progress{margin:11px 0 0}
+:root .sim-app progress::-webkit-progress-bar{background:var(--ui-soft);border-radius:4px}
+:root .sim-app progress::-webkit-progress-value{background:var(--ui-accent);border-radius:4px;transition:width .5s}
+:root .sim-app progress::-moz-progress-bar{background:var(--ui-accent);border-radius:4px}
+:root .sim-app .sim-participation-bars i{min-height:0}
+:root .sim-app .sim-minimum-note{font-size:14px;line-height:1.7;color:var(--ui-muted);margin:16px 0 0}
+:root .sim-app .sim-pending-average{color:var(--ui-muted)}
+:root .sim-app .sim-person-name{display:flex;align-items:center;flex-wrap:wrap;gap:6px 10px}
+:root .sim-app .sim-person-status{display:inline-flex;align-items:center;gap:6px;font-size:12px;line-height:1.5;font-weight:500;color:var(--ui-muted);white-space:nowrap}
+:root .sim-app .sim-person-status>i{display:block;flex:0 0 8px;width:8px;height:8px;border-radius:50%;background:#94a3b8}
+:root .sim-app .sim-person-status.is-filling>i{background:#22c55e;box-shadow:0 0 0 3px #22c55e20;animation:sim-filling-dot 1.5s ease-in-out infinite}
+:root .sim-app .sim-person-status.is-sent>i{background:#ef4444;box-shadow:0 0 0 3px #ef444420}
+@keyframes sim-filling-dot{50%{box-shadow:0 0 0 5px #22c55e10}}
+@media(prefers-reduced-motion:reduce){:root .sim-app .sim-person-status.is-filling>i{animation:none}}
+:root .sim-app .sim-awaiting-data p{font-size:16px}
+@media(min-width:1101px){:root .sim-app .focus-personal .sim-population-tools{grid-template-columns:minmax(200px,1fr) minmax(220px,1fr) minmax(200px,1fr);align-items:center;gap:24px}}
+@media(max-width:720px){:root .sim-app .sim-population-tools{padding:17px 20px}:root .sim-app .sim-population-popover{width:300px;max-width:calc(100vw - 64px)}}
+@media(prefers-reduced-motion:reduce){:root .sim-app progress::-webkit-progress-value{transition:none}}

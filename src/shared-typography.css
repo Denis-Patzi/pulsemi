@@ -1,0 +1,39 @@
+/* One reading scale for the manual workspace and all presentation layouts. */
+:root .sim-app{font-size:var(--ui-body)}
+:root .sim-app .sim-intro h1,:root .platform-shell h1{font-size:var(--ui-type-title)}
+:root .sim-app :is(.sim-management-title h2,.sim-question-heading h3,.sim-personal-tip h3,.sim-table-heading h3){font-size:var(--ui-type-section);line-height:1.4}
+:root .sim-app .sim-person-hero h2{font-size:clamp(29px,2.5vw,38px);line-height:1.4}
+:root .sim-app :is(.sim-question p,.sim-personal-tip p,.sim-person-hero p){font-size:var(--ui-body);line-height:1.75}
+:root .sim-app :is(.sim-question-heading p,.sim-management-title p,.sim-intro p,.sim-story p,.sim-strength p,.sim-management-tip p,.sim-actions article p,.sim-personal-scores>div,.sim-personal-scores strong){font-size:var(--ui-copy);line-height:1.7}
+:root .sim-app :is(.sim-dimension-tile>div:first-child,.sim-personal-tip strong){font-size:var(--ui-type-label);line-height:1.5}
+:root .sim-app :is(.sim-profile strong,.sim-section-label){font-size:var(--ui-copy)}
+:root .sim-app .sim-actions h4{font-size:var(--ui-body);line-height:1.6}
+:root .sim-app :is(.sim-metric>strong,.sim-dimension-tile>strong),:root .platform-shell :is(.stat>strong,.dimension-metric-value){font-size:var(--ui-type-value);font-weight:500}
+:root .sim-app .sim-metric>strong{display:flex;align-items:baseline;flex-wrap:wrap;gap:6px;white-space:normal}
+:root .sim-app :is(.sim-metric strong small,.sim-dimension-tile strong small){font-size:16px;line-height:1.5;margin-left:0}
+:root .sim-app .sim-dimension-tile strong small{margin-left:5px}
+:root .sim-app .sim-metric>div:first-child{font-size:15px;line-height:1.5}
+:root .sim-app .sim-metric>span{font-size:14px;line-height:1.7}
+:root .sim-app .sim-dimension-tile>div:first-child{min-height:54px}
+:root .sim-app .sim-table td,:root .platform-shell td{font-size:var(--ui-type-table);line-height:1.6}
+:root .sim-app .sim-table th,:root .platform-shell th{font-size:var(--ui-small)}
+:root .sim-app .sim-table-score{font-size:15px}
+:root .sim-app :is(.sim-profile small,.sim-private,.sim-unit-label,.sim-update,.sim-update small,.sim-section-label>span:last-child,.sim-question-foot,.sim-scale-labels,.sim-action-status,.sim-actions article>div,.sim-bottom-story span,.sim-bottom-story strong){font-size:var(--ui-small);line-height:1.6}
+:root .sim-app .sim-fineprint{font-size:var(--ui-small)!important;line-height:1.7!important}
+:root .sim-app .sim-participation-bars small{font-size:12px}
+:root .sim-app .sim-segmented button{font-size:14px!important}
+:root .sim-app :is(.sim-play,.sim-theme-toggle,.sim-explore,.sim-layout-options button){font-size:var(--ui-type-control)!important}
+:root .platform-shell .btn{font-size:var(--ui-type-control)}
+:root .sim-app.menu-expanded .sim-nav-item{font-size:var(--ui-type-control)!important}
+:root .sim-app .sim-brand small{font-size:9px}
+:root .sim-app .sim-topbar>span{font-size:14px}
+:root .sim-app :is(.sim-local,.sim-scenario-label,.sim-layout-options>span){font-size:var(--ui-small)}
+:root .sim-app .sim-sidebar-note p{font-size:var(--ui-copy)}
+:root .sim-app .sim-table{overflow-wrap:anywhere}
+:root .sim-app .sim-dimension-tile>div:first-child{min-width:0;overflow-wrap:anywhere}
+:root .sim-app .sim-dimension-tile>div:first-child>span{min-width:0;overflow-wrap:anywhere}
+:root .sim-app .sim-profile>div{min-width:0}
+@media(min-width:721px) and (max-width:1100px){:root .sim-app .sim-panels.focus-three{grid-template-columns:repeat(2,minmax(0,1fr))}:root .sim-app .focus-three>.sim-personal{grid-column:1 / -1}}
+@media(max-width:1200px){:root .sim-app .sim-main{padding-bottom:200px}}
+@media(max-width:720px){:root .sim-app .sim-play-controls{flex-wrap:wrap;gap:6px;min-width:0}:root .sim-app .sim-play{flex:1;min-width:160px}:root .sim-app .sim-player{gap:10px}:root .sim-app .sim-main{padding-bottom:250px}:root .sim-app .sim-topbar>span{font-size:13px}:root .sim-app .sim-profile small{font-size:12px}:root .sim-app .sim-private{font-size:12px}:root .sim-app .sim-personal-scores>div{grid-template-columns:1.4fr 1fr 36px}:root .sim-app .focus-three .sim-personal-scores>div{grid-template-columns:1fr 36px}}
+@media(max-width:720px){:root .sim-app .sim-topbar>span{min-width:0;max-width:calc(100% - 110px)}:root .sim-app .sim-topbar>span>strong{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0}:root .sim-app .sim-topbar>span>svg{flex-shrink:0}}

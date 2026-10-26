@@ -1,0 +1,75 @@
+/* A quiet presentation shell; reading sizes remain shared with the workspace. */
+:root .sim-app .sim-topbar{height:62px;background:transparent;border-bottom:0}
+:root .sim-app .sim-topbar>span{color:var(--ui-muted);gap:9px}
+:root .sim-app .sim-topbar strong{font-weight:500;color:var(--ui-ink)}
+:root .sim-app .sim-main{padding-top:14px}
+:root .sim-app .sim-intro{align-items:flex-start;gap:20px;margin-bottom:26px}
+:root .sim-app .sim-intro>div{min-width:0;flex:1}
+:root .sim-app .sim-intro h1{margin-top:0;margin-bottom:15px}
+:root .sim-app .sim-story{padding:0;min-height:0;gap:11px;align-items:flex-start}
+:root .sim-app .sim-scene-number{width:30px;height:30px;flex-shrink:0;background:var(--ui-soft);border-color:var(--ui-border);font-size:12px}
+:root .sim-app .sim-story strong{font-size:16px;font-weight:500}
+:root .sim-app .sim-story p{max-width:880px;margin:5px 0 0;color:var(--ui-muted)}
+:root .sim-app .sim-state{display:none}
+:root .sim-app .sim-scope-chip{display:flex;align-items:center;gap:7px;border:1px solid var(--ui-border);border-radius:18px;background:var(--ui-surface);color:var(--ui-muted);padding:8px 11px;font-size:13px;line-height:1.5;white-space:nowrap;margin-top:6px}
+:root .sim-app .sim-person-hero{padding:15px 22px 0;background:none;min-height:0}
+:root .sim-app .sim-panel-heading{padding-top:19px;padding-bottom:19px}
+:root .sim-app .sim-person-tools{display:flex;align-items:center;gap:8px;flex-shrink:0}
+:root .sim-app .sim-questionnaire,:root .sim-app .sim-feedback{padding-top:21px}
+:root .sim-app .sim-management-title{padding-top:13px}
+:root .sim-app .sim-management-title p{margin-bottom:17px}
+:root .sim-app .sim-management-toolbar{padding-top:14px}
+:root .sim-app .sim-update{margin-top:12px;margin-bottom:16px}
+:root .sim-app .sim-personal-tip h3{margin-top:0;margin-bottom:18px}
+:root .sim-app .sim-dimension-cards{grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:11px}
+:root .sim-app .sim-dimension-tile{grid-column:auto;padding:16px}
+:root .sim-app .sim-dimension-tile>div:first-child{min-height:54px;overflow-wrap:normal}
+:root .sim-app .sim-dimension-tile>div:first-child>span{overflow-wrap:normal;hyphens:auto}
+:root .sim-app .sim-dimension-tile>strong{display:flex;align-items:baseline;flex-wrap:wrap;gap:5px}
+:root .sim-app .sim-dimension-tile>strong>span,:root .sim-app .sim-dimension-tile strong small{white-space:nowrap}
+:root .sim-app .sim-dimension-tile strong small{margin-left:0}
+:root .sim-app .sim-sidebar .sim-brand{margin-bottom:32px}
+:root .sim-app .sim-nav-label{margin-bottom:12px}
+:root .sim-app .sim-sidebar-foot{margin-top:15px;font-size:12px}
+:root .sim-app .sim-player{gap:12px;padding:12px 15px;border-radius:23px;max-width:920px}
+:root .sim-app .sim-play{min-width:160px}
+:root .sim-app .sim-timeline{min-width:90px}
+:root .sim-app .sim-timeline input{margin:0;height:4px}
+:root .sim-app .sim-speed{font-size:0;gap:0}
+:root .sim-app .sim-speed select{min-height:36px;padding:7px 9px;border-radius:11px;font-size:14px}
+:root .sim-app .sim-presentation-options{position:relative;flex-shrink:0}
+:root .sim-app .sim-presentation-options>summary{display:grid;place-items:center;list-style:none;width:38px;height:38px;cursor:pointer;color:var(--ui-muted);background:var(--ui-soft);border:1px solid var(--ui-border);border-radius:12px}
+:root .sim-app .sim-presentation-options>summary::-webkit-details-marker{display:none}
+:root .sim-app .sim-presentation-options[open]>summary{color:var(--ui-accent);border-color:var(--ui-accent);background:var(--ui-selected)}
+:root .sim-app .sim-presentation-options>summary:focus-visible{outline:2px solid var(--ui-accent);outline-offset:4px}
+:root .sim-app .sim-options-popover{position:absolute;bottom:calc(100% + 16px);right:0;width:320px;max-width:calc(100vw - 40px);max-height:min(500px,65dvh);overflow-y:auto;padding:20px;background:var(--ui-canvas);border:1px solid var(--ui-border);border-radius:21px;box-shadow:0 15px 55px #0b122440;backdrop-filter:blur(24px)}
+:root .sim-app .sim-options-popover>strong{display:block;font-size:18px;font-weight:500;color:var(--ui-ink);margin-bottom:17px}
+:root .sim-app .sim-options-popover .sim-layout-options{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:20px}
+:root .sim-app .sim-options-popover .sim-layout-options button{justify-content:center;padding:10px 8px;gap:6px;border-radius:12px;font-size:14px!important;background:var(--ui-surface);color:var(--ui-muted);border-color:var(--ui-border)}
+:root .sim-app .sim-options-popover .sim-layout-options button[aria-pressed="true"]{background:var(--ui-selected);color:var(--ui-ink);border-color:var(--ui-accent)}
+:root .sim-app .sim-options-popover>label{display:block;font-size:14px;color:var(--ui-muted);margin-top:16px;line-height:1.6}
+:root .sim-app .sim-options-popover select{display:block;max-width:100%;width:100%;padding:11px;margin-top:7px;border-radius:12px;background:var(--ui-surface);border:1px solid var(--ui-border);font-size:14px;color:var(--ui-ink)}
+:root .sim-app .sim-clean-footnote{text-align:center;font-size:12px;color:var(--ui-muted);margin:23px 0 0}
+.sim-mobile-system{display:none}
+
+/* Individual profiles use the whole workspace; split layouts stay compact. */
+:root .sim-app[data-view="personal"] .sim-main,:root .sim-app[data-view="management"] .sim-main{max-width:none}
+:root .sim-app .sim-panels.focus-personal,:root .sim-app .sim-panels.focus-management{width:100%;max-width:none;margin:0;grid-template-columns:minmax(0,1fr)}
+:root .sim-app .focus-personal>.sim-personal,:root .sim-app .focus-management>.sim-management{width:100%;max-width:none;justify-self:stretch}
+:root .sim-app .focus-management .sim-dimension-cards{grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+:root .sim-app .focus-management .sim-dimension-tile{padding:23px}
+:root .sim-app .focus-management .sim-dimension-tile>div:first-child{min-height:60px}
+:root .sim-app .focus-management .sim-table{width:100%}
+:root .sim-app .focus-management .sim-table th:first-child{width:52%}
+:root .sim-app .focus-management .sim-table td{padding-top:17px;padding-bottom:17px}
+:root .sim-app .focus-management .sim-table-heading{padding-top:25px;padding-bottom:15px}
+:root .sim-app .focus-management .sim-metrics{gap:20px}
+:root .sim-app .focus-management .sim-metric{padding:23px}
+:root .sim-app .focus-management .sim-management-tip{padding:23px}
+:root .sim-app .focus-management .sim-actions article{padding:21px}
+:root .sim-app .focus-personal .sim-personal-scores{gap:21px}
+@media(min-width:1101px){:root .sim-app .focus-personal .sim-questions{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}:root .sim-app .focus-personal .sim-feedback{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:30px;row-gap:22px}:root .sim-app .focus-personal .sim-feedback>.sim-received{grid-column:1 / -1;margin-bottom:0}:root .sim-app .focus-personal .sim-feedback>.sim-section-label{grid-column:1}:root .sim-app .focus-personal .sim-feedback>.sim-personal-scores{grid-column:1;margin:0}:root .sim-app .focus-personal .sim-feedback>.sim-personal-tip{grid-column:2;grid-row:2 / 5}:root .sim-app .focus-personal .sim-feedback>.sim-strength{grid-column:1;padding-top:0}:root .sim-app .focus-personal .sim-feedback>.sim-fineprint{grid-column:1 / -1;margin:0}}
+@media(max-width:1200px){:root .sim-app .focus-management .sim-dimension-cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:720px){:root .sim-app .focus-management .sim-dimension-cards{grid-template-columns:1fr;gap:14px}:root .sim-app .focus-management .sim-dimension-tile>div:first-child{min-height:0;flex-direction:row;align-items:center;gap:9px}:root .sim-app .focus-management .sim-dimension-tile{padding:23px}:root .sim-app .focus-management .sim-metric{padding:15px}:root .sim-app .focus-management .sim-metrics{gap:12px}}
+@media(max-width:1100px){:root .sim-app .sim-scope-chip{display:none}:root .sim-app .sim-player{flex-wrap:wrap}:root .sim-app .sim-play-controls{flex:1}:root .sim-app .sim-timeline{flex-basis:100%;order:3}:root .sim-app .sim-main{padding-bottom:185px}}
+@media(max-width:720px){:root .sim-app .sim-topbar{height:54px;padding:0 17px}:root .sim-app .sim-main{padding-top:14px;padding-bottom:245px}:root .sim-app .sim-intro{margin-bottom:23px}:root .sim-app .sim-intro h1{margin-bottom:15px}:root .sim-app .sim-story p{font-size:16px}:root .sim-app .sim-story strong{font-size:16px}:root .sim-app .sim-scope-chip{display:none}:root .sim-app .sim-person-hero{padding:14px 20px 0}:root .sim-app .sim-player{gap:8px;padding:11px}:root .sim-app .sim-play-controls{flex-basis:100%;flex-wrap:nowrap;gap:4px}:root .sim-app .sim-play{min-width:0;flex:1;padding:11px 12px}:root .sim-app .sim-speed{order:4}:root .sim-app .sim-presentation-options{order:5}:root .sim-app .sim-timeline{flex-basis:auto;flex:1;order:3}:root .sim-app .sim-options-popover{width:310px;bottom:calc(100% + 13px)}:root .sim-app .sim-mobile-system{display:inline-flex}:root .sim-app .sim-clean-footnote{font-size:12px}}

@@ -2,7 +2,8 @@ export const units = ['Dirección', 'Asuntos Administrativos y Financieros', 'Á
 export const users = [
  {id:'ana',name:'Ana Quispe',email:'personal@emi.test',role:'personal',unit:units[1],initials:'AQ'},
  {id:'lucia',name:'Lucía Mendoza',email:'rrhh@emi.test',role:'rrhh',unit:'Recursos Humanos',initials:'LM'},
- {id:'carlos',name:'Carlos Vargas',email:'jefatura@emi.test',role:'jefe',unit:units[1],initials:'CV'},
+ {id:'carlos',name:'Carlos Vargas',email:'jefatura@emi.test',role:'jefe',supervisorType:'unidad',unit:units[1],initials:'CV'},
+ {id:'maria',name:'María Rojas',email:'carrera@emi.test',role:'jefe',supervisorType:'carrera',unit:units[2],initials:'MR'},
 ];
 export const password = 'Emi2026!';
 export const dimensions = [

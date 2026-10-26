@@ -1,0 +1,228 @@
+/* Shared materials and identity for the live workspace and presentation. */
+:root .sim-app{--ink:var(--ui-ink);--muted:var(--ui-muted);background:var(--ui-atmosphere)}
+:root .sim-app .sim-panel{background:var(--ui-surface);border-color:var(--ui-border);box-shadow:var(--ui-shadow)}
+:root .sim-app .sim-sidebar{background:var(--ui-sidebar);border-color:var(--ui-border)}
+:root .sim-app :is(.sim-panel-heading,.sim-topbar){background:var(--ui-heading);border-color:var(--ui-border)}
+:root .sim-app .sim-play{background:var(--ui-primary);color:var(--ui-primary-ink)}
+:root .sim-app .sim-player{background:var(--ui-heading);border-color:var(--ui-border)}
+
+:root .platform-shell{min-height:100vh;background:var(--ui-atmosphere);color:var(--ui-ink);font-family:'DM Sans',sans-serif;font-size:var(--ui-body)}
+:root .platform-shell .app{--platform-sidebar:260px;min-height:100vh}
+:root .platform-shell :is(h1,h2,h3,h4){color:var(--ui-ink);font-family:Manrope,sans-serif;font-weight:600}
+:root .platform-shell h1{font-size:clamp(29px,2.5vw,38px);line-height:1.3;letter-spacing:-1.4px}
+:root .platform-shell h2{font-size:25px;letter-spacing:-.7px;line-height:1.4}
+:root .platform-shell h3{font-size:19px;letter-spacing:-.3px;line-height:1.5}
+:root .platform-shell p{color:var(--ui-muted);line-height:1.75}
+:root .platform-shell small{font-size:var(--ui-small)}
+:root .platform-shell :is(button,input,textarea,select){font-family:inherit}
+:root .platform-shell :is(button,a,input,textarea,select):focus-visible{outline:2px solid var(--ui-accent);outline-offset:4px}
+:root .platform-shell :is(input,textarea,select){border:1px solid var(--ui-border);border-radius:14px;background:var(--ui-heading);color:var(--ui-ink);font-size:16px;padding:13px 15px}
+:root .platform-shell :is(input,textarea)::placeholder{color:var(--ui-muted);opacity:.8}
+:root .platform-shell :is(input,textarea,select):focus{border-color:var(--ui-accent)}
+:root .platform-shell :is(.card,.login-box){background:var(--ui-surface);border:1px solid var(--ui-border);border-radius:var(--ui-radius);box-shadow:var(--ui-shadow);backdrop-filter:blur(20px)}
+:root .platform-shell .sidebar{width:var(--platform-sidebar);padding:24px 18px;background:var(--ui-sidebar);border-right:1px solid var(--ui-border);backdrop-filter:blur(24px);overflow-y:auto;gap:0}
+:root .platform-shell .workspace{margin-left:var(--platform-sidebar);transition:margin-left .2s}
+:root .platform-shell .workspace>header{height:76px;padding:0 32px;background:var(--ui-heading);border-bottom:1px solid var(--ui-border);backdrop-filter:blur(18px)}
+:root .platform-shell main{padding:32px 32px 0;max-width:1600px}
+:root .platform-shell .platform-sidebar-toggle{display:grid;place-items:center;align-self:flex-end;flex-shrink:0;width:32px;height:30px;margin:-9px 0 14px;border-radius:9px;background:var(--ui-soft);color:var(--ui-accent)}
+:root .platform-shell .brand{gap:10px}
+:root .platform-shell .pulsemi-mark{width:37px;height:37px;border-radius:12px;box-shadow:0 4px 12px #00549f16}
+:root .platform-shell .brand-name{font-size:26px;line-height:1.2;letter-spacing:-1.2px;color:var(--ui-ink)}
+:root .platform-shell .brand-name b{color:var(--ui-accent);border-bottom:0}
+:root .platform-shell .brand small{font-size:9px;letter-spacing:1.2px;color:var(--ui-muted);margin-top:6px}
+:root .platform-shell .institution{margin-top:26px;padding:12px 10px;font-size:13px;color:var(--ui-muted);background:var(--ui-soft);border:1px solid var(--ui-border);border-radius:12px}
+:root .platform-shell :is(.dot,.live-dot){background:var(--ui-gold)}
+:root .platform-shell .nav-label{font-size:11px;font-weight:500;letter-spacing:1.5px;color:var(--ui-muted);margin:27px 12px 12px}
+:root .platform-shell nav{gap:6px}
+:root .platform-shell nav button{min-height:48px;padding:12px;gap:10px;border-radius:12px;color:var(--ui-muted);font-size:16px;line-height:1.5;font-weight:400;white-space:normal}
+:root .platform-shell nav button.active{background:var(--ui-selected);color:var(--ui-ink);font-weight:500;box-shadow:inset 3px 0 0 var(--ui-gold)}
+:root .platform-shell nav button:hover{background:var(--ui-soft)}
+:root .platform-shell .nav-copy{min-width:0}
+:root .platform-shell .prototype-demo-link{margin:16px 0 0;gap:10px;border-radius:12px;background:var(--ui-soft);border-color:var(--ui-border);color:var(--ui-accent);font-size:15px;line-height:1.5;white-space:normal;text-align:left}
+:root .platform-shell .sidebar-bottom{padding-top:24px}
+:root .platform-shell .privacy{padding:18px;border-radius:18px;background:linear-gradient(140deg,var(--ui-soft),var(--ui-heading));border:1px solid var(--ui-border);color:var(--ui-accent)}
+:root .platform-shell .privacy strong{color:var(--ui-ink);font-size:16px;font-weight:500}
+:root .platform-shell .privacy p{font-size:14px}
+:root .platform-shell .demo-badge{font-size:12px;color:var(--ui-muted);margin:19px 9px}
+:root .platform-shell .logout{color:var(--ui-muted);font-size:15px;line-height:1.5;padding:12px;min-height:44px;border-radius:11px;width:100%;margin-top:8px}
+:root .platform-shell .logout:hover{background:var(--ui-soft)}
+:root .platform-shell .theme-toggle.theme-inline{position:static;display:flex;align-items:center;gap:10px;min-height:44px;width:100%;padding:12px;border:1px solid var(--ui-border);border-radius:12px;background:var(--ui-soft);color:var(--ui-accent);box-shadow:none;font-size:15px;font-weight:400}
+:root .platform-shell .breadcrumb{color:var(--ui-muted);font-size:14px;gap:10px}
+:root .platform-shell .breadcrumb strong{color:var(--ui-ink);font-weight:400}
+:root .platform-shell .profile strong{font-size:16px;font-weight:500;color:var(--ui-ink)}
+:root .platform-shell .profile small{font-size:13px;color:var(--ui-muted)}
+:root .platform-shell :is(.avatar,.mini-avatar){background:var(--ui-soft);color:var(--ui-accent);border:1px solid var(--ui-border)}
+:root .platform-shell .page-heading{gap:20px;margin-bottom:26px}
+:root .platform-shell .eyebrow{font-size:12px;font-weight:500;letter-spacing:1.5px;color:var(--ui-muted)}
+:root .platform-shell .page-heading p{font-size:18px;line-height:1.7}
+:root .platform-shell .btn{font-size:16px;border-radius:24px;padding:13px 21px;min-height:48px;font-weight:500;white-space:normal;text-align:center}
+:root .platform-shell .btn.primary{background:var(--ui-primary);color:var(--ui-primary-ink);box-shadow:0 5px 12px #00549f16}
+:root .platform-shell .btn.primary:hover{filter:brightness(.96)}
+:root .platform-shell .btn.secondary{background:var(--ui-surface);color:var(--ui-accent);border-color:var(--ui-border);box-shadow:none}
+:root .platform-shell .pill{padding:7px 12px;border-radius:18px;font-size:13px;background:var(--ui-soft);color:var(--ui-muted);border:1px solid var(--ui-border);line-height:1.5}
+:root .platform-shell .welcome-hero{border-radius:var(--ui-radius);background:linear-gradient(115deg,var(--ui-surface),var(--ui-selected));border:1px solid var(--ui-border);padding:36px;box-shadow:var(--ui-shadow)}
+:root .platform-shell .welcome-hero h2{font-size:clamp(29px,2.5vw,38px);line-height:1.4;margin:21px 0 14px;letter-spacing:-1.2px}
+:root .platform-shell .welcome-hero p{font-size:18px;max-width:560px;color:var(--ui-muted)}
+:root .platform-shell .welcome-hero .pill{background:var(--ui-surface);color:var(--ui-accent)}
+:root .platform-shell .hero-meta{font-size:14px;color:var(--ui-muted);gap:17px;flex-wrap:wrap}
+:root .platform-shell .hero-symbol{background:var(--ui-soft);box-shadow:0 0 0 24px #8db5f710,0 0 0 48px #8db5f708;width:150px;height:150px;margin:25px;flex-shrink:0}
+:root .platform-shell .hero-symbol>span{background:var(--ui-primary);color:var(--ui-primary-ink);border:4px solid var(--ui-heading)}
+:root .platform-shell .section-title h2{font-size:24px}
+:root .platform-shell .section-title>span{font-size:14px;color:var(--ui-muted)}
+:root .platform-shell .dimension-grid{grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+:root .platform-shell .dimension-card{padding:23px}
+:root .platform-shell .dimension-card h3{font-size:18px;min-height:0;line-height:1.5}
+:root .platform-shell .dimension-card p{font-size:16px;min-height:0;line-height:1.75}
+:root .platform-shell .dimension-card small{font-size:13px;color:var(--ui-muted)}
+:root .platform-shell .dimension-number{width:38px;height:38px;border-radius:12px;font-size:15px;margin-bottom:18px}
+:root .platform-shell .two-columns{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+:root .platform-shell .info-card{padding:25px;gap:14px}
+:root .platform-shell .info-card h3{font-size:19px}
+:root .platform-shell .info-card p{font-size:16px}
+:root .platform-shell .notice{padding:16px 20px;border:1px solid var(--ui-border);border-radius:16px;background:var(--ui-soft);color:var(--ui-muted);font-size:14px;line-height:1.8;align-items:flex-start}
+:root .platform-shell footer{border-color:var(--ui-border);font-size:13px;color:var(--ui-muted);padding:24px 0 32px}
+:root .platform-shell .footer-divider{color:var(--ui-muted)}
+:root .platform-shell .dashboard-toolbar{font-size:15px;color:var(--ui-muted);gap:14px}
+:root .platform-shell .dashboard-toolbar select{font-size:15px;border-radius:14px;max-width:330px;padding:10px 12px}
+:root .platform-shell .stats-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+:root .platform-shell .stat{padding:23px;background:linear-gradient(135deg,var(--ui-surface),var(--ui-soft))}
+:root .platform-shell .stat:nth-child(2){border-top:2px solid var(--ui-gold)}
+:root .platform-shell .stat>div{font-size:15px;color:var(--ui-muted);line-height:1.5}
+:root .platform-shell .stat>div svg{color:var(--ui-accent)}
+:root .platform-shell .stat>strong{font-size:40px;font-weight:500;color:var(--ui-ink);margin:16px 0 10px}
+:root .platform-shell .stat strong small{font-size:18px;color:var(--ui-muted)}
+:root .platform-shell .stat p{font-size:14px;color:var(--ui-muted);line-height:1.7}
+:root .platform-shell .dashboard-charts{grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:22px}
+:root .platform-shell :is(.chart-card,.focus-card,.recommendations,.actions-card){padding:27px}
+:root .platform-shell .focus-card{background:linear-gradient(140deg,var(--ui-surface),var(--ui-soft))}
+:root .platform-shell .card-heading{gap:16px;flex-wrap:wrap}
+:root .platform-shell .card-heading h2{font-size:24px;line-height:1.4}
+:root .platform-shell .card-heading p{font-size:16px;color:var(--ui-muted)}
+:root .platform-shell .bar-row>div:first-child{font-size:16px;color:var(--ui-muted);line-height:1.5}
+:root .platform-shell .bar-row strong{font-size:16px;color:var(--ui-ink);white-space:nowrap}
+:root .platform-shell .bar-row strong small{font-size:13px;color:var(--ui-muted)}
+:root .platform-shell :is(.bar-track,.progress-track){background:var(--ui-soft)}
+:root .platform-shell .bar-track{height:7px}
+:root .platform-shell .bar-axis{font-size:13px;color:var(--ui-muted)}
+:root .platform-shell .focus-card>.eyebrow{font-size:12px;color:var(--ui-muted)}
+:root .platform-shell .focus-card h2{font-size:29px}
+:root .platform-shell .focus-card>p,:root .platform-shell .focus-item p{font-size:16px}
+:root .platform-shell .focus-item{border-color:var(--ui-border)}
+:root .platform-shell .focus-item>div{font-size:16px;gap:10px}
+:root .platform-shell .focus-item b{color:var(--ui-accent)}
+:root .platform-shell :is(.icon-tile,.purple-icon,.green-icon){background:var(--ui-soft);color:var(--ui-accent);border-radius:12px}
+:root .platform-shell :is(.blue,.purple,.green){color:var(--ui-accent)}
+:root .platform-shell .unit-table{padding-top:27px;border-radius:var(--ui-radius)}
+:root .platform-shell .unit-table>.card-heading{padding:0 27px}
+:root .platform-shell table{font-size:16px;line-height:1.6}
+:root .platform-shell th{background:var(--ui-soft);color:var(--ui-muted);font-size:13px;font-weight:500;border-color:var(--ui-border);padding:15px 16px}
+:root .platform-shell td{border-color:var(--ui-border);color:var(--ui-muted);padding:20px 16px}
+:root .platform-shell td:first-child{color:var(--ui-ink)}
+:root .platform-shell .unit-icon{color:var(--ui-accent)}
+:root .platform-shell .score-cell{background:var(--ui-selected);color:var(--ui-accent);border-radius:7px;font-size:15px;padding:5px 9px}
+:root .platform-shell .table-foot{padding:18px 25px;font-size:13px;color:var(--ui-muted);line-height:1.7}
+:root .platform-shell .quiz-layout{grid-template-columns:minmax(0,1fr) 270px;gap:24px}
+:root .platform-shell .quiz-progress{padding:24px}
+:root .platform-shell .quiz-progress>div:first-child{font-size:16px}
+:root .platform-shell .quiz-progress>div:first-child span{color:var(--ui-muted)}
+:root .platform-shell .progress-track i{background:var(--ui-accent)}
+:root .platform-shell .steps{gap:14px;flex-wrap:wrap}
+:root .platform-shell .steps button{font-size:14px;line-height:1.5;color:var(--ui-muted)}
+:root .platform-shell .steps button span{background:var(--ui-soft);color:var(--ui-muted);width:27px;height:27px}
+:root .platform-shell .steps button.current{color:var(--ui-accent)}
+:root .platform-shell .steps button.current span{background:var(--ui-primary);color:var(--ui-primary-ink)}
+:root .platform-shell .quiz-title h2{font-size:29px}
+:root .platform-shell .quiz-title p{font-size:18px}
+:root .platform-shell .question{padding:25px}
+:root .platform-shell .question legend{font-size:18px;line-height:1.75;color:var(--ui-ink)}
+:root .platform-shell .question legend span{font-size:14px;color:var(--ui-muted)}
+:root .platform-shell .options label{background:var(--ui-heading);border:1px solid var(--ui-border);border-radius:13px;padding:15px 9px;color:var(--ui-muted)}
+:root .platform-shell .options label.selected{background:var(--ui-selected);border-color:var(--ui-accent);color:var(--ui-ink);box-shadow:inset 0 -3px 0 var(--ui-gold)}
+:root .platform-shell .options label:focus-within{outline-color:var(--ui-accent)}
+:root .platform-shell .options b{font-size:22px;font-weight:500}
+:root .platform-shell .options span{font-size:15px;line-height:1.6;overflow-wrap:normal}
+:root .platform-shell .text-button{font-size:16px;color:var(--ui-accent);padding:10px}
+:root .platform-shell .quiz-aside{padding:25px}
+:root .platform-shell .quiz-aside h3{font-size:22px}
+:root .platform-shell .quiz-aside p{font-size:16px}
+:root .platform-shell .quiz-aside small{font-size:12px;color:var(--ui-muted)}
+:root .platform-shell .quiz-aside strong{font-size:16px;color:var(--ui-ink)}
+:root .platform-shell hr{border-color:var(--ui-border)}
+:root .platform-shell .feedback-banner{padding:22px;border-radius:20px;background:var(--ui-selected);border:1px solid var(--ui-border)}
+:root .platform-shell .feedback-banner h3{font-size:21px}
+:root .platform-shell .feedback-banner p{font-size:16px;color:var(--ui-muted)}
+:root .platform-shell .feedback-banner .icon-tile{background:var(--ui-soft);color:var(--ui-accent)}
+:root .platform-shell .personal-summary{padding:30px}
+:root .platform-shell .big-score{color:var(--ui-accent);font-size:66px;font-weight:500}
+:root .platform-shell .big-score span{color:var(--ui-muted);font-size:25px}
+:root .platform-shell .personal-summary p{font-size:18px}
+:root .platform-shell .soft-box{font-size:14px;background:var(--ui-soft);color:var(--ui-muted);border-radius:14px;line-height:1.7}
+:root .platform-shell .recommendations h3{font-size:19px;color:var(--ui-ink)}
+:root .platform-shell .recommendations h3 small{font-size:13px;color:var(--ui-muted)}
+:root .platform-shell .recommendations p{font-size:18px;line-height:1.75}
+:root .platform-shell .empty{color:var(--ui-accent)}
+:root .platform-shell .empty h2{color:var(--ui-ink);font-size:27px}
+:root .platform-shell .empty p{font-size:18px}
+:root .platform-shell .action-list article{border-color:var(--ui-border)}
+:root .platform-shell .action-list strong{font-size:18px;line-height:1.6;color:var(--ui-ink)}
+:root .platform-shell .action-list p{font-size:16px;color:var(--ui-muted)}
+:root .platform-shell .action-list label{font-size:14px;color:var(--ui-muted)}
+:root .platform-shell .action-list select{font-size:16px}
+:root .platform-shell .modal-backdrop{background:#0b122482;backdrop-filter:blur(12px)}
+:root .platform-shell .modal{padding:28px;border-radius:24px;width:530px}
+:root .platform-shell .modal label{font-size:16px;color:var(--ui-ink)}
+:root .platform-shell .icon-button{color:var(--ui-muted)}
+
+/* Sign-in is an entrance to the same workspace, with the same materials. */
+:root .platform-shell .login{background:var(--ui-atmosphere);grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+:root .platform-shell .login-story{background:linear-gradient(140deg,var(--ui-heading),var(--ui-selected));padding:42px 48px;border-right:1px solid var(--ui-border);min-width:0}
+:root .platform-shell .login-story .brand-caption{display:block}
+:root .platform-shell .login-story h1{font-size:clamp(34px,3.2vw,50px);font-weight:500;line-height:1.35;letter-spacing:-1.7px}
+:root .platform-shell .login-story h1 span{color:var(--ui-accent)}
+:root .platform-shell .login-story p{font-size:18px;max-width:470px;color:var(--ui-muted)}
+:root .platform-shell .login-story>small{font-size:13px;color:var(--ui-muted)}
+:root .platform-shell .login-form{padding:40px 32px;background:transparent;min-width:0}
+:root .platform-shell .login-box{width:520px;max-width:100%;padding:32px}
+:root .platform-shell .login-box h2{font-size:32px;letter-spacing:-1px}
+:root .platform-shell .login-box>p{font-size:18px;color:var(--ui-muted)}
+:root .platform-shell .login-box .prototype-demo-link{margin:0 0 23px;width:100%;justify-content:flex-start}
+:root .platform-shell .login-preferences{display:flex;justify-content:flex-end;margin-bottom:20px}
+:root .platform-shell .login-preferences .theme-inline{width:auto;font-size:13px;padding:8px 12px;min-height:36px}
+:root .platform-shell .login-box form>label{font-size:16px;color:var(--ui-ink)}
+:root .platform-shell .input-icon{border:1px solid var(--ui-border);border-radius:14px;background:var(--ui-heading);color:var(--ui-muted);padding-left:14px}
+:root .platform-shell .input-icon input{background:transparent;font-size:16px;border:0;min-width:0}
+:root .platform-shell .demo-login{border-color:var(--ui-border)}
+:root .platform-shell .demo-login>p{font-size:16px;color:var(--ui-muted)}
+:root .platform-shell .demo-login>button{background:var(--ui-heading);border:1px solid var(--ui-border);border-radius:14px;padding:13px;gap:12px;color:var(--ui-muted)}
+:root .platform-shell .demo-login>button:hover{background:var(--ui-selected)}
+:root .platform-shell .demo-login button strong{font-size:16px;color:var(--ui-ink);font-weight:500}
+:root .platform-shell .demo-login button small{font-size:13px;color:var(--ui-muted)}
+:root .platform-shell .demo-login>small{font-size:13px;line-height:1.7;color:var(--ui-muted)}
+:root .platform-shell .login-box .login-note{font-size:13px;color:var(--ui-muted);line-height:1.8}
+:root .platform-shell .floating-card{background:var(--ui-surface);border:1px solid var(--ui-border);box-shadow:var(--ui-shadow);border-radius:18px;transform:rotate(-3deg)}
+:root .platform-shell .floating-card strong{font-size:16px;color:var(--ui-ink)}
+:root .platform-shell .floating-card small{font-size:13px;color:var(--ui-muted)}
+:root .platform-shell .art-orbit{border-color:var(--ui-border);background:var(--ui-soft);box-shadow:0 0 0 30px #8db5f710,0 0 0 65px #8db5f708}
+:root .platform-shell .error{color:#ba324c;font-size:16px}
+:root[data-theme="dark"] .platform-shell .error{color:#ffabb9}
+
+/* The compact menu shares its preference with the demonstration. */
+:root .platform-shell .app.menu-collapsed{--platform-sidebar:76px}
+:root .platform-shell .app.menu-collapsed .sidebar{align-items:center;padding:24px 10px}
+:root .platform-shell .app.menu-collapsed .platform-sidebar-toggle{align-self:center;margin-bottom:18px}
+:root .platform-shell .app.menu-collapsed :is(.brand-caption,.institution,.nav-label,.privacy,.demo-badge,.nav-copy,.theme-toggle span){display:none}
+:root .platform-shell .app.menu-collapsed .brand{margin-bottom:30px}
+:root .platform-shell .app.menu-collapsed nav{width:100%}
+:root .platform-shell .app.menu-collapsed nav button{justify-content:center;padding:12px;width:48px}
+:root .platform-shell .app.menu-collapsed nav button>svg:last-child:not(:first-child){display:none}
+:root .platform-shell .app.menu-collapsed :is(.prototype-demo-link,.logout,.theme-toggle){width:48px;padding:12px;justify-content:center;gap:0}
+:root .platform-shell .app.menu-collapsed .prototype-demo-link>svg:last-child{display:none}
+:root .platform-shell .app.menu-collapsed .sidebar-bottom{width:48px}
+
+@media(max-width:1200px){:root .platform-shell .app{--platform-sidebar:240px}:root .platform-shell .stats-grid{grid-template-columns:repeat(2,minmax(0,1fr))}:root .platform-shell .quiz-layout{grid-template-columns:1fr}:root .platform-shell .quiz-aside{position:static}:root .platform-shell .dashboard-charts{grid-template-columns:1fr}:root .platform-shell .login-story{padding:32px}:root .platform-shell .login-box{padding:27px}:root .platform-shell .hero-symbol{width:120px;height:120px;margin:15px}:root .platform-shell .welcome-hero{padding:29px}}
+@media(max-width:1000px){:root .platform-shell .two-columns{grid-template-columns:1fr}:root .platform-shell .welcome-hero{gap:20px}:root .platform-shell .login-form{padding:30px 22px}:root .platform-shell .login-story h1{font-size:34px}:root .platform-shell .brand-name{font-size:24px}}
+@media(max-width:850px){:root .platform-shell .app,:root .platform-shell .app.menu-collapsed{--platform-sidebar:0px}:root .platform-shell .sidebar,:root .platform-shell .app.menu-collapsed .sidebar{width:280px;align-items:stretch;padding:24px 18px}:root .platform-shell .sidebar.open .brand{margin-top:36px}:root .platform-shell .platform-sidebar-toggle{display:none}:root .platform-shell .app.menu-collapsed .brand{margin-bottom:0}:root .platform-shell .app.menu-collapsed .brand-caption{display:block}:root .platform-shell .app.menu-collapsed .institution{display:flex}:root .platform-shell .app.menu-collapsed :is(.nav-label,.privacy,.demo-badge,.nav-copy,.theme-toggle span){display:block}:root .platform-shell .app.menu-collapsed nav button{width:auto;justify-content:flex-start;padding:12px;gap:10px}:root .platform-shell .app.menu-collapsed :is(.prototype-demo-link,.logout,.theme-toggle){width:100%;justify-content:flex-start;gap:10px}:root .platform-shell .app.menu-collapsed .sidebar-bottom{width:100%}:root .platform-shell .workspace>header{padding-left:65px}:root .platform-shell .mobile-toggle{background:var(--ui-heading);color:var(--ui-accent);border-color:var(--ui-border);border-radius:10px;top:21px}:root .platform-shell .scrim{background:#0b122478;backdrop-filter:blur(5px)}}
+@media(max-width:600px){:root .platform-shell main{padding:25px 18px 0}:root .platform-shell .workspace>header{padding-right:18px}:root .platform-shell .breadcrumb{font-size:13px;gap:6px}:root .platform-shell .breadcrumb strong{max-width:150px}:root .platform-shell .page-heading{gap:17px}:root .platform-shell .page-heading p{font-size:17px}:root .platform-shell .welcome-hero{padding:25px}:root .platform-shell .welcome-hero h2{font-size:29px}:root .platform-shell .welcome-hero p{font-size:18px}:root .platform-shell .hero-symbol{display:none}:root .platform-shell .section-title{gap:10px}:root .platform-shell .section-title h2{font-size:23px}:root .platform-shell .dimension-grid{grid-template-columns:1fr}:root .platform-shell .dimension-card:last-child{grid-column:auto}:root .platform-shell .dimension-card{padding:23px}:root .platform-shell .stats-grid{gap:12px}:root .platform-shell .stat{padding:19px 15px}:root .platform-shell .stat>strong{font-size:35px}:root .platform-shell .stat>div,:root .platform-shell .stat p{font-size:14px}:root .platform-shell .dashboard-toolbar select{max-width:calc(100% - 70px);font-size:14px}:root .platform-shell :is(.chart-card,.focus-card,.recommendations,.actions-card){padding:23px}:root .platform-shell .card-heading h2{font-size:23px}:root .platform-shell .question{padding:20px}:root .platform-shell .options{grid-template-columns:1fr;gap:9px}:root .platform-shell .options label{flex-direction:row;text-align:left;padding:13px 15px}:root .platform-shell .options span{font-size:16px}:root .platform-shell .quiz-buttons{gap:10px}:root .platform-shell .btn{font-size:15px;padding:12px 16px}:root .platform-shell .feedback-banner{padding:19px}:root .platform-shell .feedback-banner h3{font-size:20px}:root .platform-shell .personal-summary{padding:25px}:root .platform-shell .info-card{padding:23px}:root .platform-shell .login{display:block}:root .platform-shell .login-story{padding:26px}:root .platform-shell .login-story h1{font-size:32px}:root .platform-shell .login-form{padding:25px 16px}:root .platform-shell .login-box{padding:25px 20px;width:100%}:root .platform-shell .login-box h2{font-size:29px}:root .platform-shell .login-box .pill{font-size:12px}:root .platform-shell .demo-login>button{gap:10px;padding:12px 10px}:root .platform-shell .demo-login button strong{font-size:15px}:root .platform-shell .demo-login button small{font-size:12px}:root .platform-shell .login-story .brand small{font-size:8px}:root .platform-shell .login-story .pulsemi-mark{width:37px;height:37px}:root .platform-shell .modal{padding:24px}:root .platform-shell .notice{padding:15px;font-size:13px}:root .platform-shell .table-foot{font-size:13px}:root .platform-shell footer{font-size:12px}}
+@media(max-width:380px){:root .platform-shell .stats-grid{grid-template-columns:1fr}:root .platform-shell .login-story .brand-caption{display:block}:root .platform-shell .login-box{padding:24px 17px}}
+@media print{:root .platform-shell{background:white;color:#24334d}:root .platform-shell :is(.platform-sidebar-toggle,.theme-inline,.prototype-demo-link,.login-preferences){display:none!important}:root .platform-shell .workspace{margin-left:0}:root .platform-shell main{padding:0}:root .platform-shell .card{background:white;box-shadow:none;backdrop-filter:none;border-color:#dce3ef}:root .platform-shell :is(h1,h2,h3,p){color:#24334d}:root .platform-shell .feedback-banner{background:#edf2fa;border-color:#dce3ef}}
+@media print{:root .platform-shell{--ui-ink:#25364f;--ui-muted:#687b9c;--ui-surface:#ffffff;--ui-heading:#f5f7fc;--ui-border:#dce3ef;--ui-soft:#e8edf6;--ui-selected:#dce7f8;--ui-accent:#00549f;--ui-primary:#264b80;--ui-primary-ink:#ffffff}}

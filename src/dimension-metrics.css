@@ -1,0 +1,31 @@
+/* Both interfaces use the same dimension colors and values on the Likert scale. */
+:root .sim-app .sim-dimension-tile.dimension-0,:root .platform-shell .tone-0{background:var(--ui-tone-0)}
+:root .sim-app .sim-dimension-tile.dimension-1,:root .platform-shell .tone-1{background:var(--ui-tone-1)}
+:root .sim-app .sim-dimension-tile.dimension-2,:root .platform-shell .tone-2{background:var(--ui-tone-2)}
+:root .sim-app .sim-dimension-tile.dimension-3,:root .platform-shell .tone-3{background:var(--ui-tone-3)}
+:root .sim-app .sim-dimension-tile.dimension-4,:root .platform-shell .tone-4{background:var(--ui-tone-4)}
+:root .platform-shell .dimension-metrics{margin:30px 0}
+:root .platform-shell .dimension-metrics-heading{display:flex;align-items:center;justify-content:space-between;gap:18px;margin-bottom:19px}
+:root .platform-shell .dimension-metrics-heading h2{font-size:25px;line-height:1.4;margin-bottom:7px}
+:root .platform-shell .dimension-metrics-heading p{font-size:16px;line-height:1.7;margin:0;color:var(--ui-muted)}
+:root .platform-shell .dimension-metrics-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+:root .platform-shell .dimension-metric{padding:23px 20px;border:1px solid var(--ui-border);border-radius:23px;min-width:0;box-shadow:var(--ui-shadow)}
+:root .platform-shell .dimension-metric-heading{display:flex;flex-direction:column;align-items:flex-start;gap:12px;min-height:100px}
+:root .platform-shell .dimension-metric-heading>span{display:grid;place-items:center;width:35px;height:35px;border:1px solid var(--ui-border);border-radius:11px;background:var(--ui-surface)}
+:root .platform-shell .dimension-metric h3{font-size:18px;font-weight:500;line-height:1.5;margin:0;color:var(--ui-ink);overflow-wrap:anywhere}
+:root .platform-shell .dimension-metric-value{display:flex;align-items:baseline;gap:7px;margin:20px 0 18px;font-family:Manrope,sans-serif;font-size:40px;line-height:1.2;letter-spacing:-1.5px;font-weight:500;color:var(--ui-ink);font-variant-numeric:tabular-nums}
+:root .platform-shell .dimension-metric-value small{font-size:16px;font-family:'DM Sans',sans-serif;letter-spacing:0;color:var(--ui-muted);font-weight:400}
+:root .platform-shell .dimension-metric-value>svg{align-self:center;color:var(--ui-muted)}
+:root .platform-shell .dimension-metric-track{height:5px;background:var(--ui-soft);border-radius:5px;overflow:hidden}
+:root .platform-shell .dimension-metric-track i{display:block;height:100%;border-radius:5px;transition:width .65s ease}
+:root .platform-shell .dimension-metric>p{font-size:13px;line-height:1.7;margin:14px 0 0;color:var(--ui-muted)}
+:root .platform-shell .stats-grid .stat:nth-child(1){background:var(--ui-tone-0)}
+:root .platform-shell .stats-grid .stat:nth-child(2){background:var(--ui-tone-3)}
+:root .platform-shell .stats-grid .stat:nth-child(3){background:var(--ui-tone-1)}
+:root .platform-shell .stats-grid .stat:nth-child(4){background:var(--ui-tone-2)}
+:root .platform-shell .dimension-score{display:inline-block;min-width:53px;text-align:center;border:1px solid var(--ui-border);color:var(--ui-ink);font-size:15px}
+@media(max-width:1300px){:root .platform-shell .dimension-metrics-grid{grid-template-columns:repeat(3,minmax(0,1fr))}:root .platform-shell .dimension-metric-heading{min-height:94px}}
+@media(max-width:850px){:root .platform-shell .dimension-metric{padding:21px 17px}:root .platform-shell .dimension-metric-value{font-size:36px}}
+@media(max-width:600px){:root .platform-shell .dimension-metrics-heading{align-items:flex-start;flex-direction:column;gap:12px}:root .platform-shell .dimension-metrics-heading h2{font-size:24px}:root .platform-shell .dimension-metrics-heading p{font-size:16px}:root .platform-shell .dimension-metrics-grid{grid-template-columns:1fr;gap:14px}:root .platform-shell .dimension-metric{padding:23px}:root .platform-shell .dimension-metric-heading{flex-direction:row;align-items:center;min-height:0;gap:12px}:root .platform-shell .dimension-metric-value{font-size:40px;margin-top:20px}:root .platform-shell .dimension-metric>p{font-size:14px}}
+@media print{:root .platform-shell{--ui-tone-0:#eaf1fc;--ui-tone-1:#f0e9f8;--ui-tone-2:#e3f1ef;--ui-tone-3:#f9efd7;--ui-tone-4:#f7e7ed}:root .platform-shell .dimension-metrics-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}:root .platform-shell .dimension-metric{break-inside:avoid;padding:16px;box-shadow:none}:root .platform-shell .dimension-metric-heading{min-height:80px}:root .platform-shell .dimension-metric h3{font-size:15px}:root .platform-shell .dimension-metric-value{font-size:30px}}
+@media(prefers-reduced-motion:reduce){:root .platform-shell .dimension-metric-track i{transition:none}}
